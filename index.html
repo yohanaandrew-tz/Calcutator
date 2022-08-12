@@ -1,0 +1,160 @@
+<!DOCTYPE html>  
+<html lang = "en">
+<head>        
+     <title>Yohana-Calculator</title>
+<style>  
+#clear{ 
+width: 135px; 
+border: 3px outset;  
+ 
+   border-radius: 3px;  
+  
+  padding: 20px;  
+   
+ background-color:red;  
+} 
+#equal{background-color: green;}
+ 
+  
+.Kikokotozi  
+{ 
+ 
+width: 300px;  
+
+height: 450px; 
+ 
+margin: auto;
+  
+border: 5px ridge peru; 
+ 
+border-radius: 10px; 
+ 
+padding: 20px;
+  
+background-color: burlywood;
+box-shadow: 10px 10px 10px blue;
+
+}  
+  
+  
+  
+
+input  
+{ 
+ 
+width: 60px;
+  
+background-color: blue;  
+
+color: white; 
+ 
+border: 3px outset;  
+
+    border-radius: 5px;  
+   
+ padding: 10px;  
+   
+ margin: 5px;  
+  
+  font-size: 20px; 
+ 
+}  
+  
+
+  
+#calc{
+  
+width: 250px;
+  
+border: 5px inset;
+  
+    border-radius: 3px;  
+  
+  padding: 20px;  
+ 
+   margin: auto;  
+   
+ background-color:gray;
+
+}  
+ 
+ 
+</style>  
+
+  
+</head> 
+ 
+<body> 
+ 
+  
+<div class= "Kikokotozi">  
+<form name = "yohana"> 
+ 
+      
+    <!-- This input box shows the button pressed by the user in calculator. -->  
+
+  <input id = "calc" type ="text" name = "answer"> <br> <br> 
+
+ 
+  <!-- Display the calculator button on the screen. -->  
+
+
+  <!-- onclick() function display the number prsses by the user. --> 
+ 
+
+  <input type = "button" value = "1" onclick = "yohana.answer.value += '1' "> 
+ 
+  <input type = "button" value = "2" onclick = "yohana.answer.value += '2' ">  
+
+  <input type = "button" value = "3" onclick = "yohana.answer.value += '3' ">  
+  
+ <input type = "button" value = "+" onclick = "yohana.answer.value += '+' ">  
+  <br> <br>  
+
+    
+  <input type = "button" value = "4" onclick = "yohana.answer.value += '4' ">  
+
+  <input type = "button" value = "5" onclick = "yohana.answer.value += '5' "> 
+ 
+  <input type = "button" value = "6" onclick = "yohana.answer.value += '6' ">  
+
+  <input type = "button" value = "-" onclick = "yohana.answer.value += '-' ">  
+  <br> <br>  
+ 
+   
+  <input type = "button" value = "7" onclick = "yohana.answer.value += '7' ">  
+ 
+ <input type = "button" value = "8" onclick = "yohana.answer.value += '8' "> 
+ 
+  <input type = "button" value = "9" onclick = "yohana.answer.value += '9' ">  
+
+  <input type = "button" value = "*" onclick = "yohana.answer.value += '*' ">  
+  <br> <br>  
+    
+  
+  
+  <input type = "button" value = "/" onclick = "yohana.answer.value += '/' ">  
+
+  <input type = "button" value = "0" onclick = "yohana.answer.value += '0' ">  
+  
+  <input type = "button" value = "." onclick = "yohana.answer.value += '.' ">  
+
+
+ <!-- When we click on the '=' button, the onclick() shows the sum results on the calculator screen. -->  
+
+
+  <input type = "button" value = "=" onclick = "yohana.answer.value = eval(yohana.answer.value) " id="equal">  
+  <br>   
+
+ <!-- Display the Cancel button and erase all data entered by the user. -->  
+ 
+
+ <input type = "button" value = "CLEAR" onclick = "yohana.answer.value = ' ' " id= "clear" >
+ <input type = "button" name="delete" value = "DEL" onclick = "document.yohana.answer.value = document.yohana.answer.value.slice(0, -1) " id= "clear" >
+</form>
+  
+</div> 
+ 
+</body> 
+ 
+</html>  
